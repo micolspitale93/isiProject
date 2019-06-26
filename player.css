@@ -1,0 +1,82 @@
+body {
+    background-color: rgb(63, 161, 227);
+}
+
+#logo {
+    width: 7%;
+    margin-left: 2%;
+    margin-top: 1%;
+}
+
+#avatar
+{
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 35%;
+  height: 60%;
+  background-color: white;
+  border-color: rgb(255, 288, 0);
+  border-style: solid;
+  border-width: 5px;
+  border-radius: 5%;
+  text-align: center;
+}
+
+#circle
+{
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 100px;
+  width: 100px;
+  fill: rgb(255, 288, 0);
+}
+
+/**
+    Classe da aggiungere a runtime quando il sistema è in ascolto
+**/
+.pulsate-fwd {
+	-webkit-animation: pulsate-fwd 800ms infinite reverse forwards;
+	        animation: pulsate-fwd 800ms infinite reverse forwards;
+}
+
+ @-webkit-keyframes pulsate-fwd {
+    0% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+    50% {
+      -webkit-transform: scale(1.1);
+              transform: scale(1.1);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+  }
+  @keyframes pulsate-fwd {
+    0% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+    50% {
+      -webkit-transform: scale(1.1);
+              transform: scale(1.1);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+  }
+  

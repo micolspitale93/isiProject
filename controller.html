@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Lamb animation</title>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <script type="text/javascript" src="./jquery-3.3.1.min.js"></script>
+    <!-- scripts used for peers connection -->
+    <script src="https://webrtc.github.io/adapter/adapter-latest.js"></script>
+    <script src="./PeerConnection.js"> </script>
+    <script src="https://cdn.webrtc-experiment.com/view/websocket.js"> </script>
+    <script src="https://unpkg.com/@webcomponents/webcomponentsjs@^2/webcomponents-bundle.js"></script>
+    <script type="text/javascript" src="https://cdn.socket.io/socket.io-1.3.5.js"></script>
+    <script type="text/javascript" src="./controller.js"></script>
+    <link rel="stylesheet" href="https://cdn.webrtc-experiment.com/style.css">
+    <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+
+    <div id="alien">
+        ciambella!
+    </div>
+
+
+    <!-- just copy this <section> and next script -->
+    <section id="experiment" class="experiment">
+        <section>
+           <!-- <span>
+                Private??<a href="/websocket/" target="_blank" title="Setup Private Room!"><code><strong id="unique-token">#123456789</strong></code></a>
+            </span>
+            <input type="text" id="your-name" placeholder="insert name">-->
+            <button id="start-broadcasting" class="setup">Start</button>
+        </section>
+
+        <!-- list of all available conferencing rooms -->
+       <!-- <table id="rooms-list" style="width: 100%;"></table>-->
+       
+        <!-- local/remote videos container -->
+        <div id="videos-container"></div>
+        <button id="sendToPlayer"></button>
+
+    </section>
+
+</body>
+
+</html>
